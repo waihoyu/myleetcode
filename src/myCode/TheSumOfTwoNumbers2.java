@@ -2,24 +2,21 @@ package myCode;
 
 public class TheSumOfTwoNumbers2 {
 	public static void main(String[] agrs) {
-		ListNode oNode = new ListNode(2);
-		 oNode.next = new ListNode(4);
-		 oNode.next.next = new ListNode(3);
+		ListNode oNode = new ListNode(9);
+		oNode.next = new ListNode(9);
+		// oNode.next.next = new ListNode(9);
 		// [1,9,9,9,9,9,9,9,9,9]
-		ListNode sNode = new ListNode(4);
-		sNode.next = new ListNode(6);
-		sNode.next.next = new ListNode(4);
-		sNode.next.next.next = new ListNode(1);
+		ListNode sNode = new ListNode(9);
+		// sNode.next = new ListNode(9);
+		// sNode.next.next = new ListNode(9);
+		// sNode.next.next.next = new ListNode(1);
 		Solution3 test = new Solution3();
 		ListNode sNode4 = test.addTwoNumbers(oNode, sNode);
-		
 		ListNode tempNode = sNode4;
-		 while (tempNode != null) {
-			 System.out.println(tempNode.val);
-		 tempNode = tempNode.next;
-		 }
-		
-//		System.out.println(sNode4.toString());
+		while (tempNode != null) {
+			System.out.println(tempNode.val);
+			tempNode = tempNode.next;
+		}
 	}
 }
 
@@ -34,65 +31,118 @@ class ListNode {
 
 class Solution3 {
 	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-		ListNode tempNode = l1;
+		ListNode resultNode = null;
+		ListNode tempNode1 = l1;
 		ListNode tempNode2 = l2;
-		ListNode resultNode = new ListNode(0);
-		ListNode temp = resultNode;
-		int sum1 = 0, sum2 = 0, sum3 = 0;
-		ListNode temp2 = resultNode.next;
-		while (true) {			
-			if (tempNode != null) {
-				sum1 = tempNode.val;
-			}
-			if (tempNode2 != null) {
-				sum2 = tempNode2.val;
-			}
-			sum3 = sum1 + sum2;
-			if (sum3 >= 10) {
-				if (temp != null && temp.val > 0) {
-					int a = temp.val + sum3;
-					if (a >= 10) {
-						temp = new ListNode(a - 10);
-						temp.next = new ListNode(1);
+		int count_l1 = 0,count_l2 = 0,value_l = 0,value_2 = 0;
+//		int count_l2 = 0;
+//		int value_l = 0;
+//		int value_2 = 0;
+		ListNode tempNode = l1;
+		while (tempNode != null) {
+			count_l1++;
+			tempNode = tempNode.next;
+		}
+		tempNode = l2;
+		while (tempNode != null) {
+			count_l2++;
+			tempNode = tempNode.next;
+		}
+		if (count_l1 > count_l2) {
+			while (true) {
+				value_l = 0;
+				value_2 = 0;
+				if ((tempNode1 == null) && (tempNode2 == null)) {
+					break;
+				}
+				if (tempNode1 != null) {
+					value_l = tempNode1.val;
+				}
+				if (tempNode2 != null) {
+					value_2 = tempNode2.val;
+				}
+				tempNode = tempNode1;
+				int a = value_l + value_2;
+				if (a >= 10) {
+					tempNode1.val = (a - 10);
+					ListNode temp_Node = tempNode1.next;
+					if (temp_Node == null) {
+						tempNode1.next = new ListNode(1);
 					} else {
-						temp.next = new ListNode(a);
+						int val = temp_Node.val;
+						temp_Node.val = val + 1;
+						while (tempNode != null) {
+							int value = tempNode.next.val;
+							if (value > 10) {
+								tempNode.val = 0;
+								tempNode.next.val = value + 1;
+								tempNode = tempNode.next;
+							} else {
+								break;
+							}
+						}
 					}
 				} else {
-					temp = new ListNode(sum3 - 10);
-					temp.next = new ListNode(1);
+					tempNode1.val = value_l + value_2;
 				}
-
-			} else {
-				temp.val = sum3;
-				temp.next = new ListNode(0);
-//				if (temp.next != null) {
-//					temp.next = new ListNode(0);
-//				}
-				
+				if (tempNode1 != null) {
+					tempNode1 = tempNode1.next;
+				}
+				if (tempNode2 != null) {
+					tempNode2 = tempNode2.next;
+				}
 			}
-			if (tempNode != null) {
-				tempNode = tempNode.next;
+			resultNode = l1;
+		}
+		if (count_l1 <= count_l2) {
+			while (true) {
+				value_l = 0;
+				value_2 = 0;
+				if ((tempNode1 == null) && (tempNode2 == null)) {
+					break;
+				}
+				if (tempNode1 != null) {
+					value_l = tempNode1.val;
+				}
+				if (tempNode2 != null) {
+					value_2 = tempNode2.val;
+				}
+				tempNode = tempNode2;
+				int a = value_l + value_2;
+				if (a >= 10) {
+					tempNode2.val = (a - 10);
+					ListNode temp_Node = tempNode2.next;
+					if ( temp_Node == null) {
+						tempNode2.next = new ListNode(1);
+					} else {
+						int val = temp_Node.val;
+						temp_Node.val = val + 1;
+						while (tempNode != null) {
+							int value = tempNode.next.val;
+							if (value > 10) {
+								tempNode.val = 0;
+								tempNode.next.val = value + 1;
+								tempNode = tempNode.next;
+							} else {
+								break;
+							}
+						}
+					}
+				} else {
+					tempNode2.val = value_l + value_2;
+				}
+				if (tempNode1 != null) {
+					tempNode1 = tempNode1.next;
+				}
+				if (tempNode2 != null) {
+					tempNode2 = tempNode2.next;
+				}
 			}
-			if (tempNode2 != null) {
-				tempNode2 = tempNode2.next;
-			}
-					
-
-			if (tempNode == null && tempNode2 == null) {
-				break;
-			}			
+			resultNode = l2;
 		}
 		return resultNode;
 	}
-//    public void addNode(ListNode newNode){  
-//        if(newNode.next== null){  
-//        	newNode.next = newNode;  
-//        }else{  
-//        	newNode.next.addNode(newNode);  
-//        }  
-//    } 
 }
-
 
 
 
