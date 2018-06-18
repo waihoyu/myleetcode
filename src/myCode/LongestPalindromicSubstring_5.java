@@ -1,5 +1,5 @@
 /**
- * 第  5 题
+ * 第  5 题  2018年6月18日
  *给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为1000。
  *示例 1：
  *输入: "babad"
@@ -9,7 +9,6 @@
  *输入: "cbbd"
  *输出: "bb" 
  */
-
 package myCode;
 
 public class LongestPalindromicSubstring_5 {
