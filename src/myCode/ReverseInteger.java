@@ -15,8 +15,6 @@ public class ReverseInteger {
 
 }
 
-
-
 class Solution_ReverseInteger {
     public int reverse(int x) {
     	ArrayList<Integer> middleList = new ArrayList<Integer>();
