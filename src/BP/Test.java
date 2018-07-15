@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+
 public class Test {
 
 	/**
@@ -45,7 +46,7 @@ public class Test {
 			}
 		}
 
-		System.out.println("ÑµÁ·Íê±Ï£¬ÏÂÃæÇëÊäÈëÒ»¸öÈÎÒâÊý×Ö£¬Éñ¾­ÍøÂç½«×Ô¶¯ÅÐ¶ÏËüÊÇÕýÊý»¹ÊÇ¸´Êý£¬ÆæÊý»¹ÊÇÅ¼Êý¡£");
+		System.out.println("Ñµï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ç½«ï¿½Ô¶ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¼ï¿½ï¿½ï¿½ï¿½");
 
 		while (true) {
 			byte[] input = new byte[10];
@@ -81,16 +82,16 @@ public class Test {
 			
 			switch (idx) {
 			case 0:
-				System.out.format("%dÊÇÒ»¸öÕýÆæÊý\n", rawVal);
+				System.out.format("%dï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\n", rawVal);
 				break;
 			case 1:
-				System.out.format("%dÊÇÒ»¸öÕýÅ¼Êý\n", rawVal);
+				System.out.format("%dï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Å¼ï¿½ï¿½\n", rawVal);
 				break;
 			case 2:
-				System.out.format("%dÊÇÒ»¸ö¸ºÆæÊý\n", rawVal);
+				System.out.format("%dï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\n", rawVal);
 				break;
 			case 3:
-				System.out.format("%dÊÇÒ»¸ö¸ºÅ¼Êý\n", rawVal);
+				System.out.format("%dï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Å¼ï¿½ï¿½\n", rawVal);
 				break;
 			}
 		}

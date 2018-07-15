@@ -2,6 +2,7 @@ package BP;
 
 import java.util.Random;  
 
+
 /** 
  * BPNN. 
  *  

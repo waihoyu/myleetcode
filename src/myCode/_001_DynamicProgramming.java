@@ -6,7 +6,9 @@ package myCode;
  * @author WaiHoYu
  *
  */
-public class DynamicProgramming_001 {
+
+
+public class _001_DynamicProgramming {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
