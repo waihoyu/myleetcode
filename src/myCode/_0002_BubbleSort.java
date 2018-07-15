@@ -1,9 +1,9 @@
 /**
- * Ã°ÅÝÅÅÐò£¨Bubble Sort£©
+ * Ã°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Bubble Sortï¿½ï¿½
  */
 package myCode;
 
-public class BubbleSort {
+public class _0002_BubbleSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

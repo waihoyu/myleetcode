@@ -8,7 +8,7 @@ package myCode;
  */
 
 
-public class _001_DynamicProgramming {
+public class _0001_DynamicProgramming {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -1,6 +1,6 @@
 package myCode;
 
-public class TheSumOfTwoNumbers {
+public class _0010_TheSumOfTwoNumbers {
 	public static void main(String[] agrs) {
 		 int[] nums = { 2, 7, 11, 15 };
 		 int tar = 9;

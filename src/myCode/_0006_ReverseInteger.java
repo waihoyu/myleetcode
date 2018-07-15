@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import javax.swing.plaf.synth.SynthSeparatorUI;
 
-public class ReverseInteger {
+public class _0006_ReverseInteger {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

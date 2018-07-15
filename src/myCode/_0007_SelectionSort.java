@@ -3,10 +3,10 @@ package myCode;
 /**
  * package myCode;
  * @author WaiHoYu
- *Ñ¡ÔñÅÅÐò£¨Selection Sort£©
+ *Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Selection Sortï¿½ï¿½
  */
 
-public class SelectionSort {
+public class _0007_SelectionSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

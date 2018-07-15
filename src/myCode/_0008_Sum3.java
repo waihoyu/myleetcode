@@ -3,7 +3,7 @@ package myCode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Sum3 {
+public class _0008_Sum3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] nums = { -1, 0, 1, 2, -1, -4 };
