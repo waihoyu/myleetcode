@@ -44,21 +44,14 @@ class _0001_DynamicProgramming_dp
 		int[] arry_dp = new int[7]; 
 		arry_dp[0] = arr[0];
 		arry_dp[1] = arr[1];
-		System.out.println("+++++++++++++++");
-		System.out.println(" {1, 2, 4, 1, 7, 8, 3}");
 		for (int i = 2; i < arry_dp.length; i++) {
 			int tempA = arry_dp[i - 2] + arr[i];
 			int tempB = arry_dp[i - 1];			
 			arry_dp[i] = Math.max(tempA, tempB);
-			System.out.println( "tempA " + tempA + " : " + "tempB " + tempB);
-			System.out.println(arry_dp[i]);
 		}	
-		System.out.println("+++++++++++++++");
-		System.out.println("---------------");
 		for (int i = 0; i < arry_dp.length; i++) {
 			System.out.println(arry_dp[i]);
 		}
-		System.out.println("---------------");
 		return arry_dp[arry_dp.length - 1];
 	}
 }
