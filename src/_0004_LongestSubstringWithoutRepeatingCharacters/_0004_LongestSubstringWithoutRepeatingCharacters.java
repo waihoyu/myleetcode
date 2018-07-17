@@ -1,4 +1,4 @@
-package myCode;
+package _0004_LongestSubstringWithoutRepeatingCharacters;
 
 public class _0004_LongestSubstringWithoutRepeatingCharacters {
 

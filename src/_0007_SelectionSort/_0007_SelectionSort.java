@@ -1,4 +1,4 @@
-package myCode;
+package _0007_SelectionSort;
 
 /**
  * package myCode;

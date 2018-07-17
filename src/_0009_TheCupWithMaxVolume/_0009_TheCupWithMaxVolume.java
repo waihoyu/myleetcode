@@ -7,7 +7,7 @@
  * 2018��6��14���ύͨ�� leetcode
  */
 
-package myCode;
+package _0009_TheCupWithMaxVolume;
 
 public class _0009_TheCupWithMaxVolume {
 	public int[] arry = { 1, 2, 4, 3 };

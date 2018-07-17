@@ -1,15 +1,5 @@
-/**
- * ��  5 ��  2018��6��18��
- *����һ���ַ��� s���ҵ� s ����Ļ����Ӵ�������Լ��� s ����󳤶�Ϊ1000��
- *ʾ�� 1��
- *����: "babad"
- *���: "bab"
- *ע��: "aba"Ҳ��һ����Ч�𰸡�
- *ʾ�� 2��
- *����: "cbbd"
- *���: "bb" 
- */
-package myCode;
+
+package _0003_LongestPalindromicSubstring_5;
 
 public class _0003_LongestPalindromicSubstring_5 {
 	public static void main(String[] args) {

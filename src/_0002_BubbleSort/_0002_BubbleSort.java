@@ -1,7 +1,7 @@
 /**
  * ð������Bubble Sort��
  */
-package myCode;
+package _0002_BubbleSort;
 
 public class _0002_BubbleSort {
 

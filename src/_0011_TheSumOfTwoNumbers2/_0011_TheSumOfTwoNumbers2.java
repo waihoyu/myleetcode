@@ -11,7 +11,7 @@
 	ԭ��342 + 465 = 807
  */
 
-package myCode;
+package _0011_TheSumOfTwoNumbers2;
 
 public class _0011_TheSumOfTwoNumbers2 {
 	public static void main(String[] agrs) {

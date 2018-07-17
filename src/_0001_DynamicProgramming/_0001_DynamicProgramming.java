@@ -1,4 +1,4 @@
-package myCode;
+package _0001_DynamicProgramming;
 
 /**
  * @ClassName:  _0001_DynamicProgramming   

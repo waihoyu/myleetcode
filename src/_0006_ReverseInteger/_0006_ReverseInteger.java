@@ -1,4 +1,4 @@
-package myCode;
+package _0006_ReverseInteger;
 
 import java.util.ArrayList;
 

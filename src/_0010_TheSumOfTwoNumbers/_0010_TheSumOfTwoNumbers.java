@@ -1,4 +1,4 @@
-package myCode;
+package _0010_TheSumOfTwoNumbers;
 
 public class _0010_TheSumOfTwoNumbers {
 	public static void main(String[] agrs) {
