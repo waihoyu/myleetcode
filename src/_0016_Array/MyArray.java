@@ -12,3 +12,6 @@ while(true) {
 	}
 
 }
+class  Arr {
+	
+}
